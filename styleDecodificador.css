@@ -1,0 +1,100 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: rgb(191, 170, 212);
+}
+.logotipo {
+width: 8%;
+display: inline;
+}
+nav{
+    
+    margin:  0 80px ;
+    padding: 10px 0;
+   
+}
+
+label{
+    font-size: 30px;
+}
+
+textarea {
+    resize:none
+}
+textarea{
+    padding: 50px 0;
+    margin: 0 15px;
+    background: #fefefe;
+    font-size: 20px;
+    border: solid 3px rgba(255, 0, 149, 0.514);
+    border-radius: 30px;
+    display: inline-block;
+}
+#mensagemSecreta{
+    margin: 0 auto;  
+}
+   
+#mensagemPronta   {
+    background:url(ilustração.png) center center no-repeat; /* "Quebra" o padrão de textarea */
+    border:3px solid rgba(255, 0, 149, 0.514); /* "Restaura" o padrão */
+    background-color: #fefefe;
+   
+}
+h2 {
+    margin-left: 20px;
+}
+
+textarea:invalid{
+    border: 2px solid red
+}
+
+button{
+    background: rgb(191, 170, 212);
+    color: white;
+    font-size: 20px;
+    border-color: rgba(255, 0, 149, 0.514);
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 3px;
+    margin: 0 0 20px; /*espaçamento externo*/
+    padding: 10px 25px; /*cima e embaixo, lados espaçamento entre o conteúdo e a borda*/
+    
+}
+button{
+    margin: 0 15px;
+}
+#botaoCopiar {
+    margin-left: 150px;
+}
+
+footer{
+    background: lightpink;
+    text-align: center;
+    margin: 15px 0 20px;
+    padding: 10px 25px;
+}
+a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: blueviolet;
+}
+a:hover {
+    color: purple;
+}
+
+@media screen and (max-width:480px) {
+    
+ a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: blueviolet;
+}
+a:hover {
+    color: purple;
+}
+
+}
+ 
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+       <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="styleDecodificador.css">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+       <title> Decodificador de texto</title>
+
+      
+    </head>
+
+    <body>
+        <header>
+           <img src="logo alura sem fundo.png" alt="Logo da Alura com inicial da letra A" class="logotipo">     
+        </header>
+        <main>
+            
+            <nav>
+                <div>
+                        <label for="mensagemSecreta"> Digite sua mensagem secreta:</label> <br> <br>
+
+                    <textarea id="mensagemSecreta" rows="20" cols="40" type="text" type="submit" maxlength="500"  >  </textarea> 
+                    <textarea  cols="40" rows="20" id="mensagemPronta" type="text" readonly></textarea>  
+                    <h2> ℹ️ Apenas letras minúsculas e sem acentos</h2>
+
+                    <br> <br>
+                        <button id="botaoCripitografar" onclick= "btnEncriptar()">Criptografar</button>
+                        <button id="botaoDescripitografar" onclick="btnDescriptar()">Descripitografar</button>
+    
+                        <button id="botaoCopiar" onclick = "btnCopiar()"> Copiar</button>
+                        <button  id="botaoLimpar" onclick="btnLimpar()" type="reset" value="clear">  Limpar</button>
+                 </div>
+            </nav>
+
+
+    </main>
+
+   <script src="decodificador.js"></script> 
+    </body>
+
+    <footer>Feito por <a href="https://github.com/larabatista8">Larissa Batista</a></footer>
+</html>
