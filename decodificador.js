@@ -11,7 +11,7 @@ function btnEncriptar() {
 }
 
 function encriptar(stringEncriptada) {
-let matrizCodigo = [["e","enter"], ["i", "imes"], ["a", "i"], ["o","ober"], ["u","ufat"]];
+let matrizCodigo = [["e","enter"], ["i", "imes"], ["a", "ai"], ["o","ober"], ["u","ufat"]];
 stringEncriptada = stringEncriptada.toLowerCase();
 
 for ( let i=0; i < matrizCodigo.length; i++) {
@@ -26,12 +26,22 @@ return stringEncriptada;
 // desfazendo a Criptografia
 
  function btnDescriptar() {
-   const textoDescriptado = descriptar(mensagemPronta.value)
-   mensagemPronta.value = textoDescriptado 
- }
+   let mensagemVazia = mensagemPronta.value
+
+
+  if (!mensagemVazia){
+    const textoDescriptado = descriptar(mensagemSecreta.value);
+    mensagemPronta.value = textoDescriptado; 
+    mensagemPronta.style.backgroundImage = "none"
+  } else {
+      const textoDescriptado = descriptar(mensagemPronta.value);
+    mensagemPronta.value = textoDescriptado; 
+  } 
+  
+}
 
  function descriptar(stringDescriptada) {
-   let substituicao = [["enter", "e"], ["imes","i"], ["ai", "i"],["ober", "o"], ["ufat","u"]];
+   let substituicao = [["enter", "e"], ["imes","i"], ["ai", "a"],["ober", "o"], ["ufat","u"]];
   
 
   for ( let i =0; i < substituicao.length; i++) {
@@ -40,7 +50,9 @@ return stringEncriptada;
     }
   }
   return stringDescriptada;
- }
+}
+ 
+ 
 
 //  copiando o texto 
  function btnCopiar() {
@@ -54,6 +66,7 @@ return stringEncriptada;
 function btnLimpar() {
   document.getElementById("mensagemSecreta").value = ""; 
   document.getElementById("mensagemPronta").value = "";
+  mensagemPronta.style.backgroundImage = "url('ilustração.png')";
 }
 
 // bloqueando a digitação de caracteres especiais e letras maiusculas
