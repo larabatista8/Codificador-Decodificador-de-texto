@@ -1,7 +1,7 @@
 // Selecionando as caixas de texto(textarea)
 const mensagemSecreta = document.querySelector("#mensagemSecreta");
 const mensagemPronta = document.querySelector("#mensagemPronta");
-
+mensagemSecreta.focus();
 //Criando a criptografia
 
 function btnEncriptar() {
