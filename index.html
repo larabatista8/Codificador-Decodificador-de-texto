@@ -2,11 +2,13 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-       <link rel="stylesheet" href="reset.css">
-       <link rel="stylesheet" href="styleDecodificador.css">
-       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
-       <title> Decodificador de texto</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styleDecodificador.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <title> Decodificador de texto</title>
+        <link rel="icon" type="image/x-icon" href="logo alura sem fundo.png">
 
       
     </head>
@@ -19,18 +21,29 @@
             
             <nav>
                 <div>
-                        <label for="mensagemSecreta"> Digite sua mensagem secreta:</label> <br> <br>
-
-                    <textarea id="mensagemSecreta" rows="20" cols="40" type="text" type="submit" maxlength="500"  >  </textarea> 
-                    <textarea  cols="40" rows="20" id="mensagemPronta" type="text" readonly></textarea>  
-                    <h2> ℹ️ Apenas letras minúsculas e sem acentos</h2>
-
-                    <br> <br>
+                    <label for="mensagemSecreta" class="instrucaoDeUso"> Digite sua mensagem:</label> <br> <br>
+                    <section>
+                        
+                        <textarea id="mensagemSecreta" rows="20" cols="40" type="text" type="submit" maxlength="500"  >  </textarea> 
+                        <h2> ℹ️ Apenas letras minúsculas e sem acentos</h2>
+                        <br>
                         <button id="botaoCripitografar" onclick= "btnEncriptar()">Criptografar</button>
                         <button id="botaoDescripitografar" onclick="btnDescriptar()">Descripitografar</button>
-    
+                    </section>
+                    <section class="caixaDeSaida">
+                        <textarea  cols="40" rows="20" id="mensagemPronta" type="text" readonly></textarea>
+                        <br> <br>
                         <button id="botaoCopiar" onclick = "btnCopiar()"> Copiar</button>
-                        <button  id="botaoLimpar" onclick="btnLimpar()" type="reset" value="clear">  Limpar</button>
+                        <button  id="botaoLimpar" onclick="btnLimpar()" type="reset" value="clear">  Limpar</button>  
+                       
+                    </section>
+                    
+                   
+
+                
+                       
+    
+                       
                  </div>
             </nav>
 
